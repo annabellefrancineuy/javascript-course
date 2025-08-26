@@ -160,6 +160,8 @@
 // const averageAge = (ageJonas + ageSarah) /2;
 // console.log(ageJonas, ageSarah, averageAge);
 
+//BMI Calculator
+
 //Test Data 1
 // let massMark = 78;
 // let heightMark = 1.69;
@@ -438,27 +440,9 @@
 
 //Final Challenge: Tip Calculator
 
-//if and else statement version
-//const bill = 275;
-// if (bill >= 50 && bill <= 300){
-//     let tip = bill * 0.15;
-//     let total = tip + bill;
-//     console.log(`The bill was ${bill}, the tip was ${tip}, and the total was ${total}`);
-// } else {
-//     tip = bill * 0.2;
-//     total = tip + bill;
-//     console.log(`The bill was ${bill}, the tip was ${tip}, and the total was ${total}`);
-// }
-
-//ternary operator version
 const bill = 430;
 let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total was ${tip + bill}`);
-
-//other ternary version
-console.log(`The bill was ${bill}, the tip was ${bill >= 50 && bill <= 300 ? 
-    bill * 0.15 : 0.2}
-    , and the total was ${bill + tip}`);
 
 
 
