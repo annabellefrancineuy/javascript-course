@@ -287,31 +287,31 @@ Beginner Approach:
   - Don't understand wha the code does
   - Same problem happens repeatedly
 */
-console.log('Goal: Master research and debugging skills');
-console.log(
-  'Startegic research builds lasting knowledge, not just quick fixes'
-);
-console.log(`===PROFESSIONAL RESESEARCH TECHNIQUES`);
-console.log('=== USE SPECIFIC KEYWORDS===');
-console.log(
-  `Bad: javascript problem with array
-     Good: javascript find maximum value in array
-     Best: javascript Math.max array speed operator`
-);
-console.log('===INCLUDE PROGRAMMING LANGUAGE ===');
-console.log(`Always start with "javascript" for our context.`);
-console.log('===SITE SPECIFIC SEARCHES===');
-console.log(
-  `site:stackoverflow.com for community solutions
-    site: developer.mozilla.org dfor official docs
-    site:github.com for code examples
-    '`
-);
-console.log('===SEARCH CURRENT SOLUTIONS===');
-console.log(
-  `Add year or "2024" for up-to-date approaches
-    `
-);
+// console.log('Goal: Master research and debugging skills');
+// console.log(
+//   'Startegic research builds lasting knowledge, not just quick fixes'
+// );
+// console.log(`===PROFESSIONAL RESESEARCH TECHNIQUES`);
+// console.log('=== USE SPECIFIC KEYWORDS===');
+// console.log(
+//   `Bad: javascript problem with array
+//      Good: javascript find maximum value in array
+//      Best: javascript Math.max array speed operator`
+// );
+// console.log('===INCLUDE PROGRAMMING LANGUAGE ===');
+// console.log(`Always start with "javascript" for our context.`);
+// console.log('===SITE SPECIFIC SEARCHES===');
+// console.log(
+//   `site:stackoverflow.com for community solutions
+//     site: developer.mozilla.org dfor official docs
+//     site:github.com for code examples
+//     '`
+// );
+// console.log('===SEARCH CURRENT SOLUTIONS===');
+// console.log(
+//   `Add year or "2024" for up-to-date approaches
+//     `
+// );
 
 // //Exercise: Finding Maximum Value in Array
 
@@ -357,156 +357,236 @@ console.log(
 // const reverseResults = reverseStringMethods('hello');
 // console.log('Stack Overflow research results:', reverseResults);
 
-//MDN Documentation Mastery
+// //MDN Documentation Mastery
 
-function demonsrateConcat() {
-  const array1 = [1, 2, 3];
-  const array2 = [4, 5, 6];
-  const array3 = [7, 8, 9];
+// function demonsrateConcat() {
+//   const array1 = [1, 2, 3];
+//   const array2 = [4, 5, 6];
+//   const array3 = [7, 8, 9];
 
-  const simple = array1.concat(array2);
-  const multiple = array1.concat(array2, array3);
+//   const simple = array1.concat(array2);
+//   const multiple = array1.concat(array2, array3);
 
-  console.log('Original array1 unchanged:', array1);
-  return { simple, multiple };
-}
-const concatResults = demonsrateConcat();
-console.log('MDN documentation applied:', concatResults);
-
-//Systematic Debugging Process
-
-console.log('===5-STEP DEBUGGING PROCESS===');
-console.log(
-  `1. Identify - Recognize bug exists.
-     2. Isolate - Locate where bug happnes.
-     3. Investigate - Understand why bug occurs.
-     4. Fix - Implement correction.
-     5. Prevent - Add safeguards against similar bugs.
-    `
-);
-
-// //Buggy function
-// function calculateAverageScore(score) {
-//   let total; //total starts as undefined (should be 0)
-
-//   for (let i = 0; i <= score.length; i++) {
-//     total += scores[i]; //Loop condition uses <= (should be <)
-//   }
-//   return total / (scores.length + 1); //Should be scores.length
+//   console.log('Original array1 unchanged:', array1);
+//   return { simple, multiple };
 // }
-// const testScores = [85, 92, 78, 96, 88];
-// const buggyResult = calculateAverageScore(testScores);
-// console.log('Buggy result:', buggyResult); // Will show Nan or incorrect value
+// const concatResults = demonsrateConcat();
+// console.log('MDN documentation applied:', concatResults);
 
-//Browser Developer Tools Mastery
-//Essential Console Methods
-/*
-console.log() - Basic output
-console.warn() - Warnings (yellow)
-console.error() - Errors (red)
-console.table() - Formatted tables for objects/arrays
-console.group() / console.groupEnd() - Organized sections
-*/
+// //Systematic Debugging Process
 
-//Console Debugging practice
-function demonstrateConsoleDebugging(data) {
-  console.group('Debugging Session');
+// console.log('===5-STEP DEBUGGING PROCESS===');
+// console.log(
+//   `1. Identify - Recognize bug exists.
+//      2. Isolate - Locate where bug happnes.
+//      3. Investigate - Understand why bug occurs.
+//      4. Fix - Implement correction.
+//      5. Prevent - Add safeguards against similar bugs.
+//     `
+// );
 
-  console.log('Input data:', data);
+// // //Buggy function
+// // function calculateAverageScore(score) {
+// //   let total; //total starts as undefined (should be 0)
 
-  if (typeof data !== 'object') {
-    console.warn('Warning: Expected object, got', typeof data);
-  }
-  console.table(data);
-  console.groupEnd();
-  return Array.isArray(data) ? data.length : Object.keys(data).length;
-}
-const arrayData = [1, 2, 3, 4, 5];
-const objectData = { name: 'John', age: 30, city: 'New York' };
+// //   for (let i = 0; i <= score.length; i++) {
+// //     total += scores[i]; //Loop condition uses <= (should be <)
+// //   }
+// //   return total / (scores.length + 1); //Should be scores.length
+// // }
+// // const testScores = [85, 92, 78, 96, 88];
+// // const buggyResult = calculateAverageScore(testScores);
+// // console.log('Buggy result:', buggyResult); // Will show Nan or incorrect value
 
-demonstrateConsoleDebugging(arrayData);
-demonstrateConsoleDebugging(objectData);
+// //Browser Developer Tools Mastery
+// //Essential Console Methods
+// /*
+// console.log() - Basic output
+// console.warn() - Warnings (yellow)
+// console.error() - Errors (red)
+// console.table() - Formatted tables for objects/arrays
+// console.group() / console.groupEnd() - Organized sections
+// */
 
-//Debugger Statement and Breakpoints
-// function stepThroughDebugging(numbers) {
-//   debugger; // This will pause execution in browser dev tools
+// //Console Debugging practice
+// function demonstrateConsoleDebugging(data) {
+//   console.group('Debugging Session');
 
-//   let sum = 0;
-//   let count = 0;
+//   console.log('Input data:', data);
 
-//   for (let i = 0; i < numbers.length; i++) {
-//     const currentNumber = numbers[i];
+//   if (typeof data !== 'object') {
+//     console.warn('Warning: Expected object, got', typeof data);
+//   }
+//   console.table(data);
+//   console.groupEnd();
+//   return Array.isArray(data) ? data.length : Object.keys(data).length;
+// }
+// const arrayData = [1, 2, 3, 4, 5];
+// const objectData = { name: 'John', age: 30, city: 'New York' };
 
-//     console.log(`Processing index ${i}: value = ${currentNumber}`);
+// demonstrateConsoleDebugging(arrayData);
+// demonstrateConsoleDebugging(objectData);
 
-//     if (typeof currentNumber === 'number') {
-//       sum += currentNumber;
-//       count++;
+// //Debugger Statement and Breakpoints
+// // function stepThroughDebugging(numbers) {
+// //   debugger; // This will pause execution in browser dev tools
+
+// //   let sum = 0;
+// //   let count = 0;
+
+// //   for (let i = 0; i < numbers.length; i++) {
+// //     const currentNumber = numbers[i];
+
+// //     console.log(`Processing index ${i}: value = ${currentNumber}`);
+
+// //     if (typeof currentNumber === 'number') {
+// //       sum += currentNumber;
+// //       count++;
+// //     } else {
+// //       console.error(`Invalid number at index ${i}:`, currentNumber);
+// //     }
+// //   }
+
+// //   const average = count > 0 ? sum / count : 0;
+// //   console.log('Final results:', { sum, count, average });
+
+// //   return average;
+// // }
+
+// // // Test the debugging function
+// // const mixedNumbers = [10, 20, 'error', 30, null, 40];
+// // const debugResult = stepThroughDebugging(mixedNumbers);
+// // console.log('Debug session result:', debugResult);
+
+// //Complete Bug Fixing Application
+// function calculateAverageScoreFixed(scores) {
+//   if (!Array.isArray(scores) || scores.length === 0) {
+//     console.error('Invalid input: scores must be a non-empty array');
+//     return 0;
+//   }
+
+//   let total = 0; //Fixed: Initialize to 0 and is not undefined
+
+//   for (let i = 0; i < scores.length; i++) {
+//     // Fixed: < instead of <=
+//     if (typeof scores[i] === 'number') {
+//       total += scores[i];
 //     } else {
-//       console.error(`Invalid number at index ${i}:`, currentNumber);
+//       console.warn(`Skipping non-number value at index ${i}:`, scores[i]);
 //     }
 //   }
-
-//   const average = count > 0 ? sum / count : 0;
-//   console.log('Final results:', { sum, count, average });
-
-//   return average;
+//   return total / scores.length; // Fixed: Remove + 1
 // }
 
-// // Test the debugging function
-// const mixedNumbers = [10, 20, 'error', 30, null, 40];
-// const debugResult = stepThroughDebugging(mixedNumbers);
-// console.log('Debug session result:', debugResult);
+// // Test the fixed function
+// const testScores = [85, 92, 78, 96, 88];
+// const fixedResult = calculateAverageScoreFixed(testScores);
+// console.log('Fixed result:', fixedResult); // Should show correct average: 87.8
 
-//Complete Bug Fixing Application
-function calculateAverageScoreFixed(scores) {
-  if (!Array.isArray(scores) || scores.length === 0) {
-    console.error('Invalid input: scores must be a non-empty array');
-    return 0;
+// // Comprehensive debugging verification
+// console.group('Debugging Verification Tests');
+
+// // Test 1 - Normal case
+// const normalScores = [85, 92, 78, 96, 88];
+// const normalResult = calculateAverageScoreFixed(normalScores);
+// console.log('Normal case result:', normalResult);
+
+// // Test 2 - Edge case with invalid data
+// const mixedScores = [85, 'invalid', 92, null, 78];
+// const mixedResult = calculateAverageScoreFixed(mixedScores);
+// console.log('Mixed data result:', mixedResult);
+
+// // Test 3 - Error case with invalid input
+// const errorResult = calculateAverageScoreFixed('not an array');
+// console.log('Error case result:', errorResult);
+
+// // Test 4 - Edge case with empty array
+// const emptyResult = calculateAverageScoreFixed([]);
+// console.log('Empty array result:', emptyResult);
+
+// console.groupEnd();
+
+// console.log('Systematic debugging process successfully applied!');
+// console.log(
+//   'All bugs identified, isolated, investigated, fixed, and prevented'
+// );
+
+//Advanced Challenges
+
+console.log('Ready to tackle complex problems using systematic approaches');
+console.log('Challenge: Build solutions that work under pressure');
+
+//Section 1: Weather Forecast Challenge
+
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+function printForecast(arr) {
+  let str = '';
+  //I chose the loop approach because it's easy for beginners.
+  for (let i = 0; i < arr.length; i++) {
+    str += `${arr[i]}°C in ${i + 1} days ... `;
   }
-
-  let total = 0; //Fixed: Initialize to 0 and is not undefined
-
-  for (let i = 0; i < scores.length; i++) {
-    // Fixed: < instead of <=
-    if (typeof scores[i] === 'number') {
-      total += scores[i];
-    } else {
-      console.warn(`Skipping non-number value at index ${i}:`, scores[i]);
-    }
-  }
-  return total / scores.length; // Fixed: Remove + 1
+  console.log('...' + str);
 }
+printForecast(data1);
+printForecast(data2);
 
-// Test the fixed function
-const testScores = [85, 92, 78, 96, 88];
-const fixedResult = calculateAverageScoreFixed(testScores);
-console.log('Fixed result:', fixedResult); // Should show correct average: 87.8
+//Section 2: Time-Pressured Challenge
+function analyzeWorkWeek(dailyHours) {
+  const totalHours = dailyHours.reduce((sum, hours) => sum + hours, 0);
+  const averageHours = Math.round((totalHours / dailyHours.length) * 10) / 10;
 
-// Comprehensive debugging verification
-console.group('Debugging Verification Tests');
+  const maxHours = Math.max(...dailyHours);
+  const maxDayIndex = dailyHours.indexOf(maxHours);
+  const days = [
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+    'Sunday',
+  ];
+  const maxDay = days[maxDayIndex];
+  const daysWorked = dailyHours.filter(hours => hours > 0).length;
+  const isFullTime = totalHours >= 35;
 
-// Test 1 - Normal case
-const normalScores = [85, 92, 78, 96, 88];
-const normalResult = calculateAverageScoreFixed(normalScores);
-console.log('Normal case result:', normalResult);
+  return {
+    totalHours,
+    averageHours,
+    maxDay,
+    daysWorked,
+    isFullTime,
+  };
+}
+const weeklyHours = [7.5, 8, 6.5, 0, 8.5, 4, 0];
+const analysis = analyzeWorkWeek(weeklyHours);
+console.log('Work week analysis:', analysis);
+console.log('Challenge completed under time pressure!');
 
-// Test 2 - Edge case with invalid data
-const mixedScores = [85, 78, 92, 88, 78];
-const mixedResult = calculateAverageScoreFixed(mixedScores);
-console.log('Mixed data result:', mixedResult);
+//Section 3: Debug Legacy Code
+function enhancedForecastFunction(temperatures, options = {}) {
+  if (!Array.isArray(temperatures) || temperatures.length === 0) {
+    console.error('Invalid input: temperatures must be a non-empty array.');
+    return '';
+  }
+  const { unit = '°C', seperator = '...', includeIndex = true } = options;
 
-// Test 3 - Error case with invalid input
-const errorResult = calculateAverageScoreFixed('not an array');
-console.log('Error case result:', errorResult);
-
-// Test 4 - Edge case with empty array
-const emptyResult = calculateAverageScoreFixed([]);
-console.log('Empty array result:', emptyResult);
-
-console.groupEnd();
-
-console.log('Systematic debugging process successfully applied!');
+  let result = '';
+  for (let i = 0; i < temperatures.length; i++) {
+    const dayNumber = includeIndex ? i + 1 : i;
+    result += `${temperatures[i]}${unit} in ${dayNumber} days${seperator}`;
+  }
+  return seperator + result.slice(0, -seperator.length);
+}
+const testData = [15, 18, 22, 19];
+console.log('Fixed and Enhanced function:', enhancedForecastFunction(testData));
 console.log(
-  'All bugs identified, isolated, investigated, fixed, and prevented'
+  'Enhanced function:',
+  enhancedForecastFunction(testData, {
+    unit: '°F',
+    separator: ' | ',
+    includeIndex: true,
+  })
 );
